@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="workspace.xml updates" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Sorted issue with README.md not displaying build as passing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643992094191</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Sorted issue with README.md not displaying build as passing">
+      <created>1644077075239</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1644077075239</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +195,7 @@
     <MESSAGE value="Created MongoDB connection within docker" />
     <MESSAGE value="Updated GitHub Actions" />
     <MESSAGE value="Updated Maven and Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Maven and Dockerfile" />
+    <MESSAGE value="Sorted issue with README.md not displaying build as passing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorted issue with README.md not displaying build as passing" />
   </component>
 </project>
