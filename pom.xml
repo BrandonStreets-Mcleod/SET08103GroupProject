@@ -6,13 +6,13 @@
 
     <groupId>org.example</groupId>
     <artifactId>GroupProject</artifactId>
-    <version>0.1.0.2</version>
+    <version>0.1.0.3</version>
 
     <dependencies>
         <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongodb-driver</artifactId>
-            <version>3.12.10</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.18</version>
         </dependency>
     </dependencies>
 
