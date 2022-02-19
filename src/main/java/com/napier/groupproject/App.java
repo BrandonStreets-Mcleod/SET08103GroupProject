@@ -17,11 +17,11 @@ public class App
         // Connect to database
         a.connect();
         //gets population of all countries
+        System.out.println(String.format("%-5s %-50s %-20s %-20s %-20s %-20s", "Code", "Name", "Continent", "Region", "Population", "Capital"));
         ArrayList<Country> countries = a.populationOfCountries();
         for (Country country : countries)
         {
-            System.out.println(country.code + "," + country.name + "," + country.continent + "," +
-                    country.region + "," + country.population + "," + country.capital);
+            System.out.println(String.format("%-5s %-50s %-20s %-20s %-20s %-20s", country.code, country.name, country.continent, country.region, country.population, country.capital));
         }
         // Disconnect from database
         a.disconnect();
