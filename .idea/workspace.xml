@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added string.format() to organise return columns">
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Function added to get countries by continent name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backlog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backlog.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.3-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/GroupProject-0.1.0.3-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/GroupProject-0.1.0.3.jar" afterDir="false" />
@@ -264,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645267368082</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Function added to get countries by continent name">
+      <created>1645269787927</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1645269787927</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -340,6 +346,7 @@
     <MESSAGE value="Preparing for release" />
     <MESSAGE value="Built feature to get population of countries" />
     <MESSAGE value="Added string.format() to organise return columns" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added string.format() to organise return columns" />
+    <MESSAGE value="Function added to get countries by continent name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Function added to get countries by continent name" />
   </component>
 </project>
