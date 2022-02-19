@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Preparing for release" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Function added to get countries by continent name">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.3-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/GroupProject-0.1.0.3-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/GroupProject-0.1.0.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/napier/groupproject/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/napier/groupproject/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +31,15 @@
         <option value="BrandonStreets-Mcleod &lt;brandon.streetsmcleod@gmail.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,9 +114,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.db/Dockerfile" />
         <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.Docker Image" />
+        <item itemvalue="Docker.db/Dockerfile" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -235,7 +249,28 @@
       <option name="project" value="LOCAL" />
       <updated>1644770311950</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Built feature to get population of countries">
+      <created>1645264849764</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1645264849764</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added string.format() to organise return columns">
+      <created>1645267368082</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1645267368082</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Function added to get countries by continent name">
+      <created>1645269787927</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1645269787927</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -309,6 +344,9 @@
     <MESSAGE value="docker-compose file added to allow for sql and app to communicate as services" />
     <MESSAGE value="database connection and disconnection functions created" />
     <MESSAGE value="Preparing for release" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparing for release" />
+    <MESSAGE value="Built feature to get population of countries" />
+    <MESSAGE value="Added string.format() to organise return columns" />
+    <MESSAGE value="Function added to get countries by continent name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Function added to get countries by continent name" />
   </component>
 </project>
