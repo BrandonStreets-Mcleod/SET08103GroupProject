@@ -1,5 +1,8 @@
 package com.napier.groupproject;
 
+/**
+ * used to build country objects to allow for countries to be stored as singular objects that can be called
+ */
 public class Country {
     public String code;
     public String name;

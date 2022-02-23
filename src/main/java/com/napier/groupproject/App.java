@@ -6,8 +6,7 @@ import java.util.ArrayList;
 public class App
 {
     /**
-     *
-     * @param args
+     * @param args - the argument that is passed to the main function
      */
     public static void main(String[] args)
     {
@@ -91,6 +90,9 @@ public class App
         }
     }
 
+    /**
+     * @return list of countries
+     */
     public ArrayList<Country> populationOfCountries()
     {
         try
@@ -127,6 +129,10 @@ public class App
         return null;
     }
 
+    /**
+     * @param continentName - passes the string value of the continents name
+     * @return list of countries
+     */
     public ArrayList<Country> populationOfCountriesInContinent(String continentName)
     {
         try
@@ -163,6 +169,10 @@ public class App
         return null;
     }
 
+    /**
+     * @param regionName - the string value of the regions name
+     * @return list of countries
+     */
     public ArrayList<Country> populationOfCountriesInRegion(String regionName)
     {
         try
@@ -199,6 +209,9 @@ public class App
         return null;
     }
 
+    /**
+     * @param countries - an arraylist of country objects that can be printed to create the report
+     */
     public static void printCountries(ArrayList<Country> countries)
     {
         // Print header

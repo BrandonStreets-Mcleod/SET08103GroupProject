@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Function added to get countries by region name">
-      <change afterPath="$PROJECT_DIR$/use-cases/use-case-1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/use-cases/use-case-2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/use-cases/use-case-3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/use-cases/use-case-4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/use-cases/use-case-5.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/use-cases/use-case-6.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/use-cases/use-case-7.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/use-cases/use-case-8.md" afterDir="false" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Use case diagram started and javadoc comments added to App.java and Country.java">
+      <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
+      <change afterPath="$PROJECT_DIR$/use-cases/GroupProjectSystem.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="editable-svg" />
       </list>
     </option>
   </component>
@@ -58,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="Docker" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -279,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645619634087</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Full use cases produced">
+      <created>1645623537835</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1645623537835</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -357,6 +361,8 @@
     <MESSAGE value="Added string.format() to organise return columns" />
     <MESSAGE value="Function added to get countries by continent name" />
     <MESSAGE value="preparing for release" />
-    <option name="LAST_COMMIT_MESSAGE" value="preparing for release" />
+    <MESSAGE value="Full use cases produced" />
+    <MESSAGE value="Use case diagram started and javadoc comments added to App.java and Country.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use case diagram started and javadoc comments added to App.java and Country.java" />
   </component>
 </project>
