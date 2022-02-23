@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Function added to get countries by region name">
+      <change afterPath="$PROJECT_DIR$/use-cases/use-case-1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/use-case-2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/use-case-3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/use-case-4.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/use-case-5.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/use-case-6.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/use-case-7.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-cases/use-case-8.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645269787927</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="preparing for release">
+      <created>1645619634087</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1645619634087</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -342,6 +356,7 @@
     <MESSAGE value="Built feature to get population of countries" />
     <MESSAGE value="Added string.format() to organise return columns" />
     <MESSAGE value="Function added to get countries by continent name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Function added to get countries by continent name" />
+    <MESSAGE value="preparing for release" />
+    <option name="LAST_COMMIT_MESSAGE" value="preparing for release" />
   </component>
 </project>
