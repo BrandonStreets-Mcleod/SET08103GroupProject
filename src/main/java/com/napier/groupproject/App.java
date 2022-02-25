@@ -232,7 +232,7 @@ public class App
             // Create an SQL statement
             Statement stmt = con.createStatement();
             // Create string for SQL statement
-            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population" +
+            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population " +
             "FROM city JOIN country ON (country.code = city.CountryCode) " +
             "ORDER BY city.Population DESC";
             // Execute SQL statement
