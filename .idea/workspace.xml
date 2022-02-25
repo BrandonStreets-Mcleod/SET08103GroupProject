@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Use case diagram started and javadoc comments added to App.java and Country.java">
       <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
-      <change afterPath="$PROJECT_DIR$/use-cases/GroupProjectSystem.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use-cases/GroupProjectSystem.svg" beforeDir="false" afterPath="$PROJECT_DIR$/use-cases/GroupProjectSystem.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
