@@ -22,6 +22,8 @@ public class App
         printCountries(countriesInContinent);
         ArrayList<Country> countriesInRegion = a.populationOfCountriesInRegion("North America");
         printCountries(countriesInRegion);
+        ArrayList<City> cities = a.allCities();
+        printCities(cities);
         // Disconnect from database
         a.disconnect();
     }
@@ -220,6 +222,53 @@ public class App
         for (Country country : countries)
         {
             System.out.println(String.format("%-5s %-50s %-20s %-35s %-20s %-20s", country.code, country.name, country.continent, country.region, country.population, country.capital));
+        }
+    }
+
+    public ArrayList<City> allCities()
+    {
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population" +
+            "FROM city JOIN country ON (country.code = city.CountryCode) " +
+            "ORDER BY city.Population DESC";
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            ArrayList<City> cities = new ArrayList<>();
+            while (rset.next())
+            {
+                City city = new City();
+                city.ID = rset.getInt("ID");
+                city.Name = rset.getString("city.name");
+                city.Country = rset.getString("country.name");
+                city.District = rset.getString("District");
+                city.Population = rset.getInt("city.Population");
+
+                cities.add(city);
+            }
+            return cities;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get city details");
+        }
+        return null;
+    }
+
+    public static void printCities(ArrayList<City> cities)
+    {
+        // Print header
+        System.out.println(String.format("%-30s %-30s %-35s %-20s", "Name", "Country", "District", "Population"));
+        // Loop over all countries in the list
+        for (City city : cities)
+        {
+            System.out.println(String.format("%-30s %-30s %-35s %-20s", city.Name, city.Country, city.District, city.Population));
         }
     }
 }
