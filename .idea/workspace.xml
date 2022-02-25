@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Use case diagram started and javadoc comments added to App.java and Country.java">
-      <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use-cases/GroupProjectSystem.svg" beforeDir="false" afterPath="$PROJECT_DIR$/use-cases/GroupProjectSystem.svg" afterDir="false" />
-    </list>
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Use case diagram finished" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -281,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645623537835</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Use case diagram finished">
+      <created>1645801274265</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1645801274265</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -361,6 +364,7 @@
     <MESSAGE value="preparing for release" />
     <MESSAGE value="Full use cases produced" />
     <MESSAGE value="Use case diagram started and javadoc comments added to App.java and Country.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use case diagram started and javadoc comments added to App.java and Country.java" />
+    <MESSAGE value="Use case diagram finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use case diagram finished" />
   </component>
 </project>
