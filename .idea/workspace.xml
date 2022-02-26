@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="function to get all cities in the world devleoped">
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="functions to get all capital cities and cities in areas added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backlog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backlog.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.4-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/GroupProject-0.1.0.4-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/GroupProject-0.1.0.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/napier/groupproject/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/napier/groupproject/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -313,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645805695058</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="functions to get all capital cities and cities in areas added">
+      <created>1645909003019</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1645909003019</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -371,7 +378,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First commit, adding inital files" />
     <MESSAGE value="Added App.java file" />
     <MESSAGE value="Created Dockerfile" />
     <MESSAGE value="Updated README.md" />
@@ -396,6 +402,7 @@
     <MESSAGE value="Use case diagram finished" />
     <MESSAGE value="Backlog.md updated" />
     <MESSAGE value="function to get all cities in the world devleoped" />
-    <option name="LAST_COMMIT_MESSAGE" value="function to get all cities in the world devleoped" />
+    <MESSAGE value="functions to get all capital cities and cities in areas added" />
+    <option name="LAST_COMMIT_MESSAGE" value="functions to get all capital cities and cities in areas added" />
   </component>
 </project>
