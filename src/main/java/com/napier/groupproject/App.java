@@ -222,4 +222,26 @@ public class App
             System.out.println(String.format("%-5s %-50s %-20s %-35s %-20s %-20s", country.code, country.name, country.continent, country.region, country.population, country.capital));
         }
     }
+
+    public void populationInWorld()
+    {
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect =
+                    "SELECT SUM(Population) AS World Population" +
+                    "FROM country" +
+                    "GROUP BY World Population";
+
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get country details");
+        }
+    }
 }
