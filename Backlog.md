@@ -13,7 +13,7 @@
 |Brandon | | The population of people, people living in cities, and people not living in cities in each continent.| 25/02/2022               |                  |
 |Brandon | | The population of people, people living in cities, and people not living in cities in each region.|    25/02/2022            |                  |
 |Brandon | | The population of people, people living in cities, and people not living in cities in each country.|   25/02/2022             |                  |
-| |Population Related (Total Population)| The population of the world.|                |                  |
+|Andrew |Population Related (Total Population)| The population of the world.|                |                  |
 | | | The population of a continent.|                |                  |
 | | | The population of a region.|                |                  |
 | | | The population of a country.|                |                  |
@@ -30,7 +30,7 @@
 | | | The top N populated capital cities in the world where N is provided by the user.|                |                  |
 | | | The top N populated capital cities in a continent where N is provided by the user.|                |                  |
 | | | The top N populated capital cities in a region where N is provided by the user.|                |                  |
-| |All Captial Cities| All the capital cities in a region organised by largest to smallest.|                |                  |
+|Brandon |All Captial Cities| All the capital cities in a region organised by largest to smallest.|                |                  |
 | |Number of people speaking language| Chinese.|                |                  |
 | | | English.|                |                  |
 | | | Hindi.|                |                  |
