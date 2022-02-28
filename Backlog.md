@@ -4,15 +4,15 @@
 | Brandon      | |All the continent in the world organised by largest population to smallest.| 12/02/2022     | 19/02/2022       |
 | Brandon      | |All the region in the world organised by largest population to smallest.| 12/02/2022     | 19/02/2022       |
 | Brandon      |Population Related (Cities)|All the cities in the world organised by largest population to smallest.| 25/02/2022     | 25/02/2022       |
-| Brandon      | | All the cities in a continent organised by largest population to smallest.| 25/02/2022     | 26/02/2022                 |
-| Brandon      | | All the cities in a region organised by largest population to smallest.| 25/02/2022     | 26/02/2022                 |
-| Brandon      | | All the cities in a country organised by largest population to smallest.| 25/02/2022     | 26/02/2022                 |
-| Brandon      | | All the cities in a district organised by largest population to smallest.| 25/02/2022     | 26/02/2022                 |
-| Brandon      | | All the capital cities in the world organised by largest population to smallest.| 25/02/2022     |  26/02/2022                |
-| Brandon      | | All the capital cities in a continent organised by largest population to smallest.| 25/02/2022     |26/02/2022                  |
-| Brandon      | | The population of people, people living in cities, and people not living in cities in each continent.| 25/02/2022     |                  |
-| Brandon      | | The population of people, people living in cities, and people not living in cities in each region.| 25/02/2022     |                  |
-| Brandon      | | The population of people, people living in cities, and people not living in cities in each country.| 25/02/2022     |                  |
+| Brandon      | | All the cities in a continent organised by largest population to smallest.| 25/02/2022     | 26/02/2022       |
+| Brandon      | | All the cities in a region organised by largest population to smallest.| 25/02/2022     | 26/02/2022       |
+| Brandon      | | All the cities in a country organised by largest population to smallest.| 25/02/2022     | 26/02/2022       |
+| Brandon      | | All the cities in a district organised by largest population to smallest.| 25/02/2022     | 26/02/2022       |
+| Brandon      | | All the capital cities in the world organised by largest population to smallest.| 25/02/2022     | 26/02/2022       |
+| Brandon      | | All the capital cities in a continent organised by largest population to smallest.| 25/02/2022     | 26/02/2022       |
+| Brandon      | | The population of people, people living in cities, and people not living in cities in each continent.| 25/02/2022     | 28/02/2022       |
+| Brandon      | | The population of people, people living in cities, and people not living in cities in each region.| 25/02/2022     |   28/02/2022               |
+| Brandon      | | The population of people, people living in cities, and people not living in cities in each country.| 25/02/2022     |   28/02/2022               |
 | Andrew       |Population Related (Total Population)| The population of the world.| 27/02/2022     |                  |
 |              | | The population of a continent.|                |                  |
 |              | | The population of a region.|                |                  |
