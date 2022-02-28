@@ -3,6 +3,8 @@ package com.napier.groupproject;
 import java.sql.*;
 import java.util.ArrayList;
 
+import static java.lang.Math.round;
+
 public class App
 {
     /**
@@ -39,6 +41,8 @@ public class App
         ArrayList<City> capitalCitiesInRegion = a.allCapitalCitiesInRegion("North America");
         printCapitalCities(capitalCitiesInRegion);
         a.populationPeopleInContinents();
+        a.populationPeopleInRegion();
+        a.populationPeopleInCountry();
         // Disconnect from database
         a.disconnect();
     }
@@ -570,9 +574,75 @@ public class App
                 String name = rset.getString("country.Continent");
                 Long totalPopulation = rset.getLong("SUM(country.Population)");
                 Long cityPopulation = rset.getLong("SUM(city.Population)");
-                Long cityPopPercentage = (cityPopulation / totalPopulation)*100;
+                double cityPopPercentage = round(cityPopulation * 100 / totalPopulation);
                 Long nonCityPopulation = totalPopulation-cityPopulation;
-                Long nonCityPopPercentage = 100-cityPopPercentage;
+                double nonCityPopPercentage = 100-cityPopPercentage;
+                System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", name, totalPopulation, cityPopulation, cityPopPercentage+"%", nonCityPopulation, nonCityPopPercentage+"%"));
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get details");
+        }
+    }
+
+    public void populationPeopleInRegion()
+    {
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT country.Region, SUM(country.Population), SUM(city.Population) " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) " +
+                    "GROUP BY country.Region";
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", "Region Name", "Total Population", "City Population", "City Population Percentage","Non-city Population", "Non-city Population Percentage"));
+            while (rset.next())
+            {
+                String name = rset.getString("country.Region");
+                Long totalPopulation = rset.getLong("SUM(country.Population)");
+                Long cityPopulation = rset.getLong("SUM(city.Population)");
+                double cityPopPercentage = round(cityPopulation * 100 / totalPopulation);
+                Long nonCityPopulation = totalPopulation-cityPopulation;
+                double nonCityPopPercentage = 100-cityPopPercentage;
+                System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", name, totalPopulation, cityPopulation, cityPopPercentage+"%", nonCityPopulation, nonCityPopPercentage+"%"));
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get details");
+        }
+    }
+
+    public void populationPeopleInCountry()
+    {
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT country.Name, SUM(country.Population), SUM(city.Population) " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) " +
+                    "GROUP BY country.Name";
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", "Country Name", "Total Population", "City Population", "City Population Percentage","Non-city Population", "Non-city Population Percentage"));
+            while (rset.next())
+            {
+                String name = rset.getString("country.Name");
+                Long totalPopulation = rset.getLong("SUM(country.Population)");
+                Long cityPopulation = rset.getLong("SUM(city.Population)");
+                double cityPopPercentage = round(cityPopulation * 100 / totalPopulation);
+                Long nonCityPopulation = totalPopulation-cityPopulation;
+                double nonCityPopPercentage = 100-cityPopPercentage;
                 System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", name, totalPopulation, cityPopulation, cityPopPercentage+"%", nonCityPopulation, nonCityPopPercentage+"%"));
             }
         }

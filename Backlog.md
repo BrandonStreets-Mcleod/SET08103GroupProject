@@ -13,7 +13,7 @@
 | Brandon      | | The population of people, people living in cities, and people not living in cities in each continent.| 25/02/2022     |                  |
 | Brandon      | | The population of people, people living in cities, and people not living in cities in each region.| 25/02/2022     |                  |
 | Brandon      | | The population of people, people living in cities, and people not living in cities in each country.| 25/02/2022     |                  |
-|              |Population Related (Total Population)| The population of the world.|                |                  |
+| Andrew       |Population Related (Total Population)| The population of the world.| 27/02/2022     |                  |
 |              | | The population of a continent.|                |                  |
 |              | | The population of a region.|                |                  |
 |              | | The population of a country.|                |                  |
