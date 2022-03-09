@@ -1,9 +1,9 @@
 package com.napier.groupproject;
 
 public class City {
-    int ID;
-    String Name;
-    String Country;
-    String District;
-    int Population;
+    public int ID;
+    public String Name;
+    public String Country;
+    public String District;
+    public int Population;
 }
