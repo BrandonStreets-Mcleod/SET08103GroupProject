@@ -113,6 +113,7 @@ public class App
     }
 
     /**
+     * Population of each country
      * @return list of countries
      */
     public ArrayList<Country> populationOfCountries()
@@ -152,6 +153,7 @@ public class App
     }
 
     /**
+     * Finds population of countries within a continent
      * @param continentName - passes the string value of the continents name
      * @return list of countries
      */
@@ -192,6 +194,7 @@ public class App
     }
 
     /**
+     * Finds population of countries within a region
      * @param regionName - the string value of the regions name
      * @return list of countries
      */
@@ -232,6 +235,7 @@ public class App
     }
 
     /**
+     * Prints all countries from the arraylist
      * @param countries - an arraylist of country objects that can be printed to create the report
      */
     public static void printCountries(ArrayList<Country> countries)
