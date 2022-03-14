@@ -11,8 +11,8 @@
 | Brandon      | | All the capital cities in the world organised by largest population to smallest.| 25/02/2022     | 26/02/2022       |
 | Brandon      | | All the capital cities in a continent organised by largest population to smallest.| 25/02/2022     | 26/02/2022       |
 | Brandon      | | The population of people, people living in cities, and people not living in cities in each continent.| 25/02/2022     | 28/02/2022       |
-| Brandon      | | The population of people, people living in cities, and people not living in cities in each region.| 25/02/2022     |   28/02/2022               |
-| Brandon      | | The population of people, people living in cities, and people not living in cities in each country.| 25/02/2022     |   28/02/2022               |
+| Brandon      | | The population of people, people living in cities, and people not living in cities in each region.| 25/02/2022     | 28/02/2022       |
+| Brandon      | | The population of people, people living in cities, and people not living in cities in each country.| 25/02/2022     | 28/02/2022       |
 | Andrew       |Population Related (Total Population)| The population of the world.| 27/02/2022     |                  |
 |              | | The population of a continent.|                |                  |
 |              | | The population of a region.|                |                  |
@@ -31,8 +31,8 @@
 |              | | The top N populated capital cities in a continent where N is provided by the user.|                |                  |
 |              | | The top N populated capital cities in a region where N is provided by the user.|                |                  |
 | Brandon      |All Captial Cities| All the capital cities in a region organised by largest to smallest.| 25/02/2022     | 26/02/2022       |
-|              |Number of people speaking language| Chinese.|                |                  |
-|              | | English.|                |                  |
-|              | | Hindi.|                |                  |
-|              | | Spanish.|                |                  |
-|              | | Arabic.|                |                  |
+| Brandon             |Number of people speaking language| Chinese.|14/03/2022                 | 14/03/2022                  |
+|  Brandon            | | English.|14/03/2022                 | 14/03/2022        |
+|  Brandon            | | Hindi.| 14/03/2022                |  14/03/2022                 |
+|  Brandon            | | Spanish.| 14/03/2022                | 14/03/2022                  |
+|  Brandon            | | Arabic.|  14/03/2022               |  14/03/2022                 |

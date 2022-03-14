@@ -43,6 +43,7 @@ public class App
         a.populationPeopleInContinents();
         a.populationPeopleInRegion();
         a.populationPeopleInCountry();
+        a.numPeopleWhoSpeak();
         // Disconnect from database
         a.disconnect();
     }
@@ -671,6 +672,39 @@ public class App
                 Long nonCityPopulation = totalPopulation-cityPopulation;
                 double nonCityPopPercentage = 100-cityPopPercentage;
                 System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", name, totalPopulation, cityPopulation, cityPopPercentage+"%", nonCityPopulation, nonCityPopPercentage+"%"));
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get details");
+        }
+    }
+
+    public void numPeopleWhoSpeak()
+    {
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT Language, SUM(country.Population), MIN(T1.Population) FROM countrylanguage JOIN country ON (country.code = countrylanguage.CountryCode) JOIN (SELECT SUM(Population) AS 'Population' FROM country) AS T1 " +
+                    "WHERE Language = 'Chinese' OR Language = 'English' OR " +
+                    "Language = 'Hindi' OR Language = 'Spanish' OR Language = 'Arabic' " +
+                    "GROUP BY Language " +
+                    "ORDER BY SUM(country.Population) DESC;";
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            System.out.println(String.format("%-28s %-28s %-28s", "Language", "Total Population that speaks language", "Percentage of world population"));
+            while (rset.next())
+            {
+                String name = rset.getString("Language");
+                Long pop = rset.getLong("SUM(country.Population)");
+                Long totalPopulation = rset.getLong("MIN(T1.Population)");
+                Double percentage = Double.valueOf(round(pop * 100 / totalPopulation));
+                System.out.println(String.format("%-28s %-28s %-28s", name, pop, percentage+"%"));
             }
         }
         catch (Exception e)

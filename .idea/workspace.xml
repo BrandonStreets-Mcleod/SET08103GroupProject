@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Backlog updated with completion date">
-      <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/napier/sem/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_02_2022_20_01__Changes_.xml" beforeDir="false" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added Junit tests for countries, cities and capital cities">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backlog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backlog.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.4-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/GroupProject-0.1.0.4-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/GroupProject-0.1.0.4.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -44,7 +39,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,7 +81,7 @@
       <recent name="C:\Users\brand\IdeaProjects\GroupProject\db" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.napier.groupproject.App" />
       <module name="GroupProject" />
@@ -168,9 +163,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Docker.Docker Image" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.db/Dockerfile" />
         <item itemvalue="Application.App" />
       </list>
