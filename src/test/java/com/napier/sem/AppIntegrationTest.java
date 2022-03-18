@@ -4,9 +4,6 @@ import com.napier.groupproject.App;
 import com.napier.groupproject.Country;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
-
-import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -25,7 +22,7 @@ public class AppIntegrationTest
     @Test
     void testGetCountry()
     {
-        assertNotNull(app.allCapitalCitiesInContinent("Asia"));
-
+        Country country = app.populationOfCountries().get(1);
+        assertEquals(country.population, 1013662000);
     }
 }
