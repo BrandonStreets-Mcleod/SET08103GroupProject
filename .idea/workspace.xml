@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Updated GitHub Actions to run tests and compilation separately">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/napier/sem/AppIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" afterDir="false" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Updated name of DB used in actions">
+      <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -407,7 +406,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647616787280</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Updated GitHub Actions to run integration tests and compilation separately">
+      <created>1647617568181</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1647617568181</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Updated name of DB used in actions">
+      <created>1647617788542</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1647617788542</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -468,8 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created MongoDB connection within docker" />
-    <MESSAGE value="Updated GitHub Actions" />
     <MESSAGE value="Updated Maven and Dockerfile" />
     <MESSAGE value="Sorted issue with README.md not displaying build as passing" />
     <MESSAGE value="world.sql database added to repo" />
@@ -493,7 +504,9 @@
     <MESSAGE value="Created function to get languages spoken" />
     <MESSAGE value="Allowed for local DB running" />
     <MESSAGE value="Updated GitHub Actions to run tests and compilation separately" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated GitHub Actions to run tests and compilation separately" />
+    <MESSAGE value="Updated GitHub Actions to run integration tests and compilation separately" />
+    <MESSAGE value="Updated name of DB used in actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated name of DB used in actions" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GroupProject$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1646845771375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
