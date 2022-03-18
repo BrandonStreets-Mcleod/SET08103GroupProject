@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added code coverage badge">
-      <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/napier/sem/AppIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/napier/sem/AppIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Resolved integration test issues">
+      <change beforePath="$PROJECT_DIR$/target/classes/com/napier/groupproject/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/napier/groupproject/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/napier/groupproject/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/napier/groupproject/Country.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -445,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647618258253</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Resolved integration test issues">
+      <created>1647631594352</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1647631594352</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -506,7 +509,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="world.sql database added to repo" />
     <MESSAGE value="sql database dockerfile added" />
     <MESSAGE value="docker-compose file added to allow for sql and app to communicate as services" />
     <MESSAGE value="database connection and disconnection functions created" />
@@ -531,7 +533,8 @@
     <MESSAGE value="Updated name of DB used in actions" />
     <MESSAGE value="Added code coverage" />
     <MESSAGE value="Added code coverage badge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added code coverage badge" />
+    <MESSAGE value="Resolved integration test issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolved integration test issues" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GroupProject$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1646845771375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
