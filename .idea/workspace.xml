@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Created function to get languages spoken">
-      <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Updated GitHub Actions to run tests and compilation separately">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/napier/sem/AppIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -398,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647616630832</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Updated GitHub Actions to run tests and compilation separately">
+      <created>1647616787280</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1647616787280</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -459,7 +468,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Packaged in Maven to make JAR file" />
     <MESSAGE value="Created MongoDB connection within docker" />
     <MESSAGE value="Updated GitHub Actions" />
     <MESSAGE value="Updated Maven and Dockerfile" />
@@ -484,7 +492,8 @@
     <MESSAGE value="Backlog updated with completion date" />
     <MESSAGE value="Created function to get languages spoken" />
     <MESSAGE value="Allowed for local DB running" />
-    <option name="LAST_COMMIT_MESSAGE" value="Allowed for local DB running" />
+    <MESSAGE value="Updated GitHub Actions to run tests and compilation separately" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated GitHub Actions to run tests and compilation separately" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GroupProject$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1646845771375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
