@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Reverting changes that broke application">
       <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.napier.sem.AppIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/GroupProject-0.1.0.4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/napier/groupproject/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/napier/groupproject/Country.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/seMethods.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/seMethods.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.napier.sem.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.napier.sem.AppTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.napier.sem.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.napier.sem.AppTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
