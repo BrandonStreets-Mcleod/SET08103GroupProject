@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Attempting to solve failed testing" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Attempting to solve failed testing (takes too long to set up JDK)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -466,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647806290837</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Attempting to solve failed testing (takes too long to set up JDK)">
+      <created>1647806699071</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1647806699071</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -527,7 +534,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="docker-compose file added to allow for sql and app to communicate as services" />
     <MESSAGE value="database connection and disconnection functions created" />
     <MESSAGE value="Preparing for release" />
     <MESSAGE value="Built feature to get population of countries" />
@@ -552,7 +558,8 @@
     <MESSAGE value="Added code coverage badge" />
     <MESSAGE value="Resolved integration test issues" />
     <MESSAGE value="Attempting to solve failed testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempting to solve failed testing" />
+    <MESSAGE value="Attempting to solve failed testing (takes too long to set up JDK)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempting to solve failed testing (takes too long to set up JDK)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GroupProject$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1646845771375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
