@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Attempting to solve failed testing (takes too long to set up JDK)">
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Attempting to solve failed testing (VM closes randomly)">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
@@ -476,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647806699071</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Attempting to solve failed testing (VM closes randomly)">
+      <created>1647808048304</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1647808048304</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -537,7 +546,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="database connection and disconnection functions created" />
     <MESSAGE value="Preparing for release" />
     <MESSAGE value="Built feature to get population of countries" />
     <MESSAGE value="Added string.format() to organise return columns" />
@@ -562,7 +570,8 @@
     <MESSAGE value="Resolved integration test issues" />
     <MESSAGE value="Attempting to solve failed testing" />
     <MESSAGE value="Attempting to solve failed testing (takes too long to set up JDK)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempting to solve failed testing (takes too long to set up JDK)" />
+    <MESSAGE value="Attempting to solve failed testing (VM closes randomly)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempting to solve failed testing (VM closes randomly)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GroupProject$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1646845771375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
