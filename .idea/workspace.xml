@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Attempting to solve failed testing (VM closes randomly)">
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Reverting changes that broke application">
+      <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.napier.sem.AppIntegrationTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/GroupProject-0.1.0.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/napier/groupproject/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/napier/groupproject/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/seMethods.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/seMethods.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.napier.sem.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.napier.sem.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.napier.sem.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.napier.sem.AppTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,22 +88,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Docker.docker-compose.yml.db: Compose Deployment">
-    <configuration name="AppIntegrationTest.testGetCountry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GroupProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.napier.sem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.napier.sem" />
-      <option name="MAIN_CLASS_NAME" value="com.napier.sem.AppIntegrationTest" />
-      <option name="METHOD_NAME" value="testGetCountry" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tests" type="JUnit" factoryName="JUnit" activateToolWindowBeforeRun="false">
       <module name="GroupProject" />
       <extension name="coverage">
@@ -143,6 +135,15 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -158,20 +159,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment (2)" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment (3)" />
       <item itemvalue="JUnit.Tests" />
-      <item itemvalue="JUnit.AppIntegrationTest.testGetCountry" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
-        <item itemvalue="JUnit.AppIntegrationTest.testGetCountry" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment (3)" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment (2)" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -408,84 +409,7 @@
       <option name="project" value="LOCAL" />
       <updated>1647616630832</updated>
     </task>
-    <task id="LOCAL-00033" summary="Updated GitHub Actions to run tests and compilation separately">
-      <created>1647616787280</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1647616787280</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Updated GitHub Actions to run integration tests and compilation separately">
-      <created>1647617568181</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1647617568181</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Updated name of DB used in actions">
-      <created>1647617788542</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1647617788542</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Added code coverage">
-      <created>1647618013380</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1647618013380</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Added code coverage badge">
-      <created>1647618258253</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1647618258253</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Resolved integration test issues">
-      <created>1647631594352</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1647631594352</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Resolved integration test issues">
-      <created>1647631715902</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1647631715902</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Resolved integration test issues">
-      <created>1647631863324</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1647631863324</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Attempting to solve failed testing">
-      <created>1647806290837</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1647806290837</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Attempting to solve failed testing (takes too long to set up JDK)">
-      <created>1647806699071</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1647806699071</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Attempting to solve failed testing (VM closes randomly)">
-      <created>1647808048304</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1647808048304</updated>
-    </task>
-    <option name="localTasksCounter" value="44" />
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -546,6 +470,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created MongoDB connection within docker" />
+    <MESSAGE value="Updated GitHub Actions" />
+    <MESSAGE value="Updated Maven and Dockerfile" />
+    <MESSAGE value="Sorted issue with README.md not displaying build as passing" />
+    <MESSAGE value="world.sql database added to repo" />
+    <MESSAGE value="sql database dockerfile added" />
+    <MESSAGE value="docker-compose file added to allow for sql and app to communicate as services" />
+    <MESSAGE value="database connection and disconnection functions created" />
     <MESSAGE value="Preparing for release" />
     <MESSAGE value="Built feature to get population of countries" />
     <MESSAGE value="Added string.format() to organise return columns" />
@@ -562,16 +494,8 @@
     <MESSAGE value="Backlog updated with completion date" />
     <MESSAGE value="Created function to get languages spoken" />
     <MESSAGE value="Allowed for local DB running" />
-    <MESSAGE value="Updated GitHub Actions to run tests and compilation separately" />
-    <MESSAGE value="Updated GitHub Actions to run integration tests and compilation separately" />
-    <MESSAGE value="Updated name of DB used in actions" />
-    <MESSAGE value="Added code coverage" />
-    <MESSAGE value="Added code coverage badge" />
-    <MESSAGE value="Resolved integration test issues" />
-    <MESSAGE value="Attempting to solve failed testing" />
-    <MESSAGE value="Attempting to solve failed testing (takes too long to set up JDK)" />
-    <MESSAGE value="Attempting to solve failed testing (VM closes randomly)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempting to solve failed testing (VM closes randomly)" />
+    <MESSAGE value="Reverting changes that broke application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverting changes that broke application" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GroupProject$Tests.ic" NAME="Tests Coverage Results" MODIFIED="1646845771375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
