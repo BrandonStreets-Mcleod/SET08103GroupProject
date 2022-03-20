@@ -4,6 +4,7 @@ on:
     branches:
       - master
       - develop
+      - feature/integration-testing
       - release
 jobs:
   UnitTests:
