@@ -7,7 +7,6 @@
     <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Edited main.yml to allow for automatic releases to be made">
       <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/napier/sem/AppIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/napier/sem/AppIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,7 +84,7 @@
       <recent name="C:\Users\brand\IdeaProjects\GroupProject\db" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.docker-compose.yml.db: Compose Deployment">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" activateToolWindowBeforeRun="false">
       <module name="GroupProject" />
       <extension name="coverage">
@@ -532,7 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="world.sql database added to repo" />
     <MESSAGE value="sql database dockerfile added" />
     <MESSAGE value="docker-compose file added to allow for sql and app to communicate as services" />
     <MESSAGE value="database connection and disconnection functions created" />
@@ -557,7 +555,8 @@
     <MESSAGE value="Added integration testing" />
     <MESSAGE value="Added CodeCov badge to README.md" />
     <MESSAGE value="Edited main.yml to allow for automatic releases to be made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited main.yml to allow for automatic releases to be made" />
+    <MESSAGE value="Added more integration tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more integration tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

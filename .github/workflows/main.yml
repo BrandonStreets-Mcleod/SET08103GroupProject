@@ -50,6 +50,7 @@ jobs:
           directory: ./target/site/jacoco
           flags: Integration Tests # optional
           verbose: true # optional (default = false)
+
   build:
     name: Build and Start Using docker-compose
     runs-on: ubuntu-20.04
