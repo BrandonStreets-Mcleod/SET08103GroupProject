@@ -31,13 +31,13 @@ public class AppIntegrationTest
     void testGetCity()
     {
         City city = app.allCities().get(1);
-        assertEquals(city.Name, "Mumbai (Bombay)");
+        assertEquals(city.Name, "Seoul");
     }
 
     @Test
     void testGetCapitalCity()
     {
         City city = app.allCapitalCities().get(1);
-        assertEquals(city.Name, "Seoul");
+        assertEquals(city.Name, "Jakarta");
     }
 }

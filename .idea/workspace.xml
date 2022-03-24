@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Edited main.yml to allow for automatic releases to be made">
       <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="develop" />
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -470,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648138700142</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Added more integration tests">
+      <created>1648139872919</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1648139872919</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="UnknownFeatures">
