@@ -24,14 +24,14 @@ public class AppTest
     @Test
     void printCountiresTestNull()
     {
-        app.printCountries(null);
+        app.printCountries(null, "test.md");
     }
 
     @Test
     void printCountiresTestEmpty()
     {
         ArrayList<Country> countries = new ArrayList<>();
-        app.printCountries(countries);
+        app.printCountries(countries, "test.md");
     }
 
     @Test
@@ -39,7 +39,7 @@ public class AppTest
     {
         ArrayList<Country> countries = new ArrayList<>();
         countries.add(null);
-        app.printCountries(countries);
+        app.printCountries(countries, "test.md");
     }
 
     @Test
@@ -63,20 +63,20 @@ public class AppTest
         country.capital = 1;
         country.code2 = 1;
         countries.add(country);
-        app.printCountries(countries);
+        app.printCountries(countries, "test.md");
     }
 
     @Test
     void printCityTestNull()
     {
-        app.printCities(null);
+        app.printCities(null, "test.md");
     }
 
     @Test
     void printCityTestEmpty()
     {
         ArrayList<City> cities = new ArrayList<City>();
-        app.printCities(cities);
+        app.printCities(cities, "test.md");
     }
 
     @Test
@@ -84,7 +84,7 @@ public class AppTest
     {
         ArrayList<City> cities = new ArrayList<City>();
         cities.add(null);
-        app.printCities(cities);
+        app.printCities(cities, "test.md");
     }
 
     @Test
@@ -98,21 +98,21 @@ public class AppTest
         city.District = "TEST";
         city.Population = 1;
         cities.add(city);
-        app.printCities(cities);
+        app.printCities(cities, "test.md");
     }
 
     //TEST
     @Test
     void printCapitalCityTestNull()
     {
-        app.printCapitalCities(null);
+        app.printCapitalCities(null, "test.md");
     }
 
     @Test
     void printCapitalCityTestEmpty()
     {
         ArrayList<City> cities = new ArrayList<City>();
-        app.printCities(cities);
+        app.printCities(cities, "test.md");
     }
 
     @Test
@@ -120,7 +120,7 @@ public class AppTest
     {
         ArrayList<City> cities = new ArrayList<City>();
         cities.add(null);
-        app.printCities(cities);
+        app.printCities(cities, "test.md");
     }
 
     @Test
@@ -134,6 +134,6 @@ public class AppTest
         city.District = "TEST";
         city.Population = 1;
         cities.add(city);
-        app.printCities(cities);
+        app.printCities(cities, "test.md");
     }
 }

@@ -1,5 +1,9 @@
 package com.napier.groupproject;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -23,27 +27,27 @@ public class App
 
         //gets population of all countries
         ArrayList<Country> countries = a.populationOfCountries();
-        printCountries(countries);
+        printCountries(countries, "allCountries.md");
         ArrayList<Country> countriesInContinent = a.populationOfCountriesInContinent("Asia");
-        printCountries(countriesInContinent);
+        printCountries(countriesInContinent, "allCountriesInContinent.md");
         ArrayList<Country> countriesInRegion = a.populationOfCountriesInRegion("North America");
-        printCountries(countriesInRegion);
+        printCountries(countriesInRegion, "allCountriesInRegion.md");
         ArrayList<City> cities = a.allCities();
-        printCities(cities);
+        printCities(cities, "allCities.md");
         ArrayList<City> citiesInContinent = a.allCitiesInAContinent("Asia");
-        printCities(citiesInContinent);
+        printCities(citiesInContinent, "allCitiesInContinent.md");
         ArrayList<City> citiesInRegion = a.allCitiesInARegion("North America");
-        printCities(citiesInRegion);
+        printCities(citiesInRegion, "allCitiesInRegion.md");
         ArrayList<City> citiesInCountry = a.allCitiesInACountry("United States");
-        printCities(citiesInCountry);
+        printCities(citiesInCountry, "allCitiesInCountry.md");
         ArrayList<City> citiesInDistrict = a.allCitiesInADistrict("California");
-        printCities(citiesInDistrict);
+        printCities(citiesInDistrict, "allCitiesInDistrict.md");
         ArrayList<City> capitalCities = a.allCapitalCities();
-        printCapitalCities(capitalCities);
+        printCapitalCities(capitalCities, "allCapitalCities.md");
         ArrayList<City> capitalCitiesInContinent = a.allCapitalCitiesInContinent("Asia");
-        printCapitalCities(capitalCitiesInContinent);
+        printCapitalCities(capitalCitiesInContinent, "allCapitalCitiesInContinent.md");
         ArrayList<City> capitalCitiesInRegion = a.allCapitalCitiesInRegion("North America");
-        printCapitalCities(capitalCitiesInRegion);
+        printCapitalCities(capitalCitiesInRegion, "allCapitalCitiesInRegion.md");
         a.populationPeopleInContinents();
         a.populationPeopleInRegion();
         a.populationPeopleInCountry();
@@ -234,23 +238,33 @@ public class App
      * Prints all countries from the arraylist
      * @param countries - an arraylist of country objects that can be printed to create the report
      */
-    public static void printCountries(ArrayList<Country> countries)
+    public static void printCountries(ArrayList<Country> countries, String filename)
     {
         if (countries == null)
         {
             System.out.println("No countries");
             return;
         }
+        StringBuilder sb = new StringBuilder();
         // Print header
-        System.out.println(String.format("%-5s %-50s %-20s %-35s %-20s %-20s", "Code", "Name", "Continent", "Region", "Population", "Capital"));
-        // Loop over all countries in the list
+        sb.append("| Code | Name | Continent | Region | Population | Capital |\r\n");
+        sb.append("| --- | --- | --- | --- | --- | --- |\r\n");
+        // Loop over all employees in the list
         for (Country country : countries)
         {
             if (country == null)
             {
                 continue;
             }
-            System.out.println(String.format("%-5s %-50s %-20s %-35s %-20s %-20s", country.code, country.name, country.continent, country.region, country.population, country.capital));
+            sb.append("| " + country.code + " | " + country.name + " | " + country.continent + " | " + country.region + " | " + country.population + " | " + country.capital + " | \r\n");
+        }
+        try {
+            new File("./reports/").mkdir();
+            BufferedWriter writer = new BufferedWriter(new FileWriter(new                                 File("./reports/" + filename)));
+            writer.write(sb.toString());
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -434,23 +448,33 @@ public class App
         return null;
     }
 
-    public static void printCities(ArrayList<City> cities)
+    public static void printCities(ArrayList<City> cities, String filename)
     {
         if (cities == null)
         {
             System.out.println("No cities");
             return;
         }
+        StringBuilder sb = new StringBuilder();
         // Print header
-        System.out.println(String.format("%-30s %-30s %-35s %-20s", "Name", "Country", "District", "Population"));
-        // Loop over all countries in the list
+        sb.append("| Name | Country | District | Population |\r\n");
+        sb.append("| --- | --- | --- | --- |\r\n");
+        // Loop over all employees in the list
         for (City city : cities)
         {
             if (city == null)
             {
                 continue;
             }
-            System.out.println(String.format("%-30s %-30s %-35s %-20s", city.Name, city.Country, city.District, city.Population));
+            sb.append("| " + city.Name + " | " + city.Country + " | " + city.District + " | " + city.Population + " |\r\n");
+        }
+        try {
+            new File("./reports/").mkdir();
+            BufferedWriter writer = new BufferedWriter(new FileWriter(new                                 File("./reports/" + filename)));
+            writer.write(sb.toString());
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -562,12 +586,33 @@ public class App
         return null;
     }
 
-    public static void printCapitalCities(ArrayList<City> cities)
+    public static void printCapitalCities(ArrayList<City> cities, String filename)
     {
         if (cities == null)
         {
             System.out.println("No capital countries");
             return;
+        }
+        StringBuilder sb = new StringBuilder();
+        // Print header
+        sb.append("| Name | Country | Population |\r\n");
+        sb.append("| --- | --- | --- |\r\n");
+        // Loop over all employees in the list
+        for (City city : cities)
+        {
+            if (city == null)
+            {
+                continue;
+            }
+            sb.append("| " + city.Name + " | " + city.Country + " | " + city.Population + " | \r\n");
+        }
+        try {
+            new File("./reports/").mkdir();
+            BufferedWriter writer = new BufferedWriter(new FileWriter(new                                 File("./reports/" + filename)));
+            writer.write(sb.toString());
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         // Print header
         System.out.println(String.format("%-30s %-30s %-20s", "Name", "Country", "Population"));

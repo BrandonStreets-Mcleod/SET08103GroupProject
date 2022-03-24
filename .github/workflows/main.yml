@@ -4,7 +4,6 @@ on:
     branches:
       - master
       - develop
-      - feature/integration-testing
       - release
 jobs:
   UnitTests:
@@ -39,10 +38,10 @@ jobs:
       - name: Integration Tests and CodeCov
         run: |
           docker build -t database ./db 
-          docker run --name employees -dp 33060:3306 database
+          docker run --name world -dp 33060:3306 database
           mvn -Dtest=com.napier.sem.AppIntegrationTest test          
-          docker stop employees
-          docker rm employees
+          docker stop world
+          docker rm world
           docker image rm database
       - name: CodeCov
         uses: codecov/codecov-action@v2
@@ -75,3 +74,10 @@ jobs:
           automatic_release_tag: "latest"
           files: |
             ./target/*.jar
+    - name: Copy Output
+      run: docker container cp groupproject_app_1:./tmp/reports ./
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4.2.5
+      with:
+        branch: reports # The branch the action should deploy to.
+        folder: reports # The folder we are copying
