@@ -4,34 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added integration tests">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.4-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.5-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/GroupProject-0.1.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/napier/groupproject/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/napier/groupproject/City.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/napier/groupproject/Country.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/seMethods.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/MyTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-MyTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.napier.sem.AppIntegrationTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.napier.sem.AppTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.napier.sem.AppIntegrationTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.napier.sem.AppTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/napier/sem/AppIntegrationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/napier/sem/AppTest.class" beforeDir="false" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added CodeCov badge to README.md">
+      <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -464,7 +439,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647812968235</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added integration testing">
+      <created>1648130256303</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1648130256303</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Added CodeCov badge to README.md">
+      <created>1648130632977</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1648130632977</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -525,8 +514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated GitHub Actions" />
-    <MESSAGE value="Updated Maven and Dockerfile" />
     <MESSAGE value="Sorted issue with README.md not displaying build as passing" />
     <MESSAGE value="world.sql database added to repo" />
     <MESSAGE value="sql database dockerfile added" />
@@ -550,7 +537,9 @@
     <MESSAGE value="Allowed for local DB running" />
     <MESSAGE value="Reverting changes that broke application" />
     <MESSAGE value="Added integration tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added integration tests" />
+    <MESSAGE value="Added integration testing" />
+    <MESSAGE value="Added CodeCov badge to README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CodeCov badge to README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
