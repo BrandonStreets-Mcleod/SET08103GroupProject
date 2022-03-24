@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added CodeCov badge to README.md">
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Edited main.yml to allow for automatic releases to be made">
       <changelist_data name="BrandonStreets-Mcleod" email="brandon.streetsmcleod@gmail.com" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,10 +186,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment (3)" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment (2)" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment (1)" />
+        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -514,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sorted issue with README.md not displaying build as passing" />
     <MESSAGE value="world.sql database added to repo" />
     <MESSAGE value="sql database dockerfile added" />
     <MESSAGE value="docker-compose file added to allow for sql and app to communicate as services" />
@@ -539,7 +539,8 @@
     <MESSAGE value="Added integration tests" />
     <MESSAGE value="Added integration testing" />
     <MESSAGE value="Added CodeCov badge to README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CodeCov badge to README.md" />
+    <MESSAGE value="Edited main.yml to allow for automatic releases to be made" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited main.yml to allow for automatic releases to be made" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
