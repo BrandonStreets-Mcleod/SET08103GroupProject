@@ -76,7 +76,7 @@ jobs:
           files: |
             ./target/*.jar
       - name: Copy Output
-        run: docker container cp groupproject_app_1:./tmp/reports ./
+        run: docker container cp set08103groupproject_app_1:./tmp/reports ./
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
