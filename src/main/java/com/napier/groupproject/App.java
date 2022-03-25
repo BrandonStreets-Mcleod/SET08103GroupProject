@@ -645,17 +645,6 @@ public class App
         } catch (IOException e) {
             e.printStackTrace();
         }
-        // Print header
-        System.out.println(String.format("%-30s %-30s %-20s", "Name", "Country", "Population"));
-        // Loop over all countries in the list
-        for (City city : cities)
-        {
-            if (city == null)
-            {
-                continue;
-            }
-            System.out.println(String.format("%-30s %-30s %-20s", city.Name, city.Country, city.Population));
-        }
     }
 
     public void populationPeopleInContinents()
