@@ -304,6 +304,9 @@ public class App
         return null;
     }
 
+    /**
+     * @param continentName - name of continent to be used in query
+     */
     public ArrayList<City> allCitiesInAContinent(String continentName)
     {
         try
@@ -340,6 +343,9 @@ public class App
         return null;
     }
 
+    /**
+     * @param regionName - name of region to be used in query
+     */
     public ArrayList<City> allCitiesInARegion(String regionName)
     {
         try
@@ -376,6 +382,9 @@ public class App
         return null;
     }
 
+    /**
+     * @param countryName - name of country used in query
+     */
     public ArrayList<City> allCitiesInACountry(String countryName)
     {
         try
@@ -412,6 +421,9 @@ public class App
         return null;
     }
 
+    /**
+     * @param districtName - name of district to be used in query
+     */
     public ArrayList<City> allCitiesInADistrict(String districtName)
     {
         try
@@ -448,6 +460,10 @@ public class App
         return null;
     }
 
+    /**
+     * @param cities - arraylist of City objs
+     * @param filename - filename of report for adding to repo
+     */
     public static void printCities(ArrayList<City> cities, String filename)
     {
         if (cities == null)
@@ -478,6 +494,9 @@ public class App
         }
     }
 
+    /**
+     * @return null
+     */
     public ArrayList<City> allCapitalCities()
     {
         try
@@ -514,6 +533,10 @@ public class App
         return null;
     }
 
+    /**
+     * @param continent - name of contient to be used in query
+     * @return null
+     */
     public ArrayList<City> allCapitalCitiesInContinent(String continent)
     {
         try
@@ -550,6 +573,10 @@ public class App
         return null;
     }
 
+    /**
+     * @param regionName - name of region to be used in query
+     * @return null
+     */
     public ArrayList<City> allCapitalCitiesInRegion(String regionName)
     {
         try
@@ -586,6 +613,10 @@ public class App
         return null;
     }
 
+    /**
+     * @param cities - arraylist of City objs that are written to report
+     * @param filename - name of file for report
+     */
     public static void printCapitalCities(ArrayList<City> cities, String filename)
     {
         if (cities == null)
