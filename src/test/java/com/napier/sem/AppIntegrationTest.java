@@ -28,6 +28,20 @@ public class AppIntegrationTest
     }
 
     @Test
+    void testGetCountryInContinent()
+    {
+        Country country = app.populationOfCountriesInContinent("Asia").get(0);
+        assertEquals(country.name, "China");
+    }
+
+    @Test
+    void testGetCountryInRegion()
+    {
+        Country country = app.populationOfCountriesInRegion("North America").get(0);
+        assertEquals(country.name, "United States");
+    }
+
+    @Test
     void testGetCity()
     {
         City city = app.allCities().get(1);
@@ -35,9 +49,51 @@ public class AppIntegrationTest
     }
 
     @Test
+    void testGetCityInContinent()
+    {
+        City city = app.allCitiesInAContinent("Asia").get(0);
+        assertEquals(city.Name, "Mumbai (Bombay)");
+    }
+
+    @Test
+    void testGetCityInRegion()
+    {
+        City city = app.allCitiesInARegion("North America").get(0);
+        assertEquals(city.Name, "New York");
+    }
+
+    @Test
+    void testGetCityInCountry()
+    {
+        City city = app.allCitiesInACountry("United States").get(0);
+        assertEquals(city.Name, "New York");
+    }
+
+    @Test
+    void testGetCityInDistrict()
+    {
+        City city = app.allCitiesInADistrict("California").get(0);
+        assertEquals(city.Name, "Los Angeles");
+    }
+
+    @Test
     void testGetCapitalCity()
     {
         City city = app.allCapitalCities().get(1);
         assertEquals(city.Name, "Jakarta");
+    }
+
+    @Test
+    void testGetCapitalCityInContinent()
+    {
+        City city = app.allCapitalCitiesInContinent("Asia").get(1);
+        assertEquals(city.Name, "Jakarta");
+    }
+
+    @Test
+    void testGetCapitalCityInRegion()
+    {
+        City city = app.allCapitalCitiesInRegion("North America").get(0);
+        assertEquals(city.Name, "Washington");
     }
 }

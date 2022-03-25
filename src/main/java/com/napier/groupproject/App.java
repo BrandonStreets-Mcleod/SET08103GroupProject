@@ -420,7 +420,7 @@ public class App
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect = "SELECT ID, city.Name, country.name, District, city.Population " +
-                    "FROM city JOIN country ON (country.code = city.CountryCode) WHERE Continent = '" + districtName +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) WHERE District = '" + districtName +
                     "' ORDER BY city.Population DESC";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
