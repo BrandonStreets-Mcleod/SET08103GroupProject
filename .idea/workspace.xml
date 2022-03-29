@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added more integration tests" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Removed reports being written to console">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -495,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648203257744</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Removed reports being written to console">
+      <created>1648220028420</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1648220028420</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -556,7 +565,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="docker-compose file added to allow for sql and app to communicate as services" />
     <MESSAGE value="database connection and disconnection functions created" />
     <MESSAGE value="Preparing for release" />
     <MESSAGE value="Built feature to get population of countries" />
@@ -581,7 +589,8 @@
     <MESSAGE value="Edited main.yml to allow for automatic releases to be made" />
     <MESSAGE value="Resolving issue with wrong container being referenced" />
     <MESSAGE value="Added more integration tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more integration tests" />
+    <MESSAGE value="Removed reports being written to console" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed reports being written to console" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
