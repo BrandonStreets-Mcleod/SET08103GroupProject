@@ -51,6 +51,7 @@ public class App
         a.populationOfContinent("Asia");
         a.populationOfCountry("United States");
         a.populationOfRegion("North America");
+        a.populationOfDistrict("California");
         a.populationPeopleInContinents();
         a.populationPeopleInRegion();
         a.populationPeopleInCountry();
@@ -861,6 +862,38 @@ public class App
             // Return new employee if valid.
             // Check one is returned
             System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", "Region Name", "Total Population", "City Population", "City Population Percentage","Non-city Population", "Non-city Population Percentage"));
+            while (rset.next())
+            {
+                String name = rset.getString("country.Region");
+                Long totalPopulation = rset.getLong("SUM(country.Population)");
+                Long cityPopulation = rset.getLong("SUM(city.Population)");
+                double cityPopPercentage = round(cityPopulation * 100 / totalPopulation);
+                Long nonCityPopulation = totalPopulation-cityPopulation;
+                double nonCityPopPercentage = 100-cityPopPercentage;
+                System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", name, totalPopulation, cityPopulation, cityPopPercentage+"%", nonCityPopulation, nonCityPopPercentage+"%"));
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get details");
+        }
+    }
+
+    public void populationOfDistrict(String districtName)
+    {
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT District, country.Population, SUM(city.Population)" +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) WHERE District = '" + districtName + "'";
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", "District Name", "Total Population", "City Population", "City Population Percentage","Non-city Population", "Non-city Population Percentage"));
             while (rset.next())
             {
                 String name = rset.getString("country.Region");
