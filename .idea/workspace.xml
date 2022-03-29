@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Assigned to feature">
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added function to get population of a user defined continent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" afterDir="false" />
     </list>
@@ -512,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648546281560</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Added function to get population of a user defined continent">
+      <created>1648547173372</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1648547173372</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -573,7 +580,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Preparing for release" />
     <MESSAGE value="Built feature to get population of countries" />
     <MESSAGE value="Added string.format() to organise return columns" />
     <MESSAGE value="Function added to get countries by continent name" />
@@ -598,7 +604,8 @@
     <MESSAGE value="Added more integration tests" />
     <MESSAGE value="Removed reports being written to console" />
     <MESSAGE value="Assigned to feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assigned to feature" />
+    <MESSAGE value="Added function to get population of a user defined continent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added function to get population of a user defined continent" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
