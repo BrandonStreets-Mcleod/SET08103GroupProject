@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added function to get population of a user defined region">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added function to get population of a user defined district">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -533,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648547513211</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Added function to get population of a user defined district">
+      <created>1648548385601</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1648548385601</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -594,7 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Function added to get countries by continent name" />
     <MESSAGE value="preparing for release" />
     <MESSAGE value="Full use cases produced" />
     <MESSAGE value="Use case diagram started and javadoc comments added to App.java and Country.java" />
@@ -619,7 +624,8 @@
     <MESSAGE value="Added function to get population of a user defined continent" />
     <MESSAGE value="Added function to get population of a user defined country" />
     <MESSAGE value="Added function to get population of a user defined region" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added function to get population of a user defined region" />
+    <MESSAGE value="Added function to get population of a user defined district" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added function to get population of a user defined district" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -52,6 +52,8 @@ public class App
         a.populationOfCountry("United States");
         a.populationOfRegion("North America");
         a.populationOfDistrict("California");
+        ArrayList<City> city = a.populationOfCity("Edinburgh");
+        printCities(city, "populationOfCity.md");
         a.populationPeopleInContinents();
         a.populationPeopleInRegion();
         a.populationPeopleInCountry();
@@ -910,6 +912,42 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get details");
         }
+    }
+
+    public ArrayList<City> populationOfCity(String cityName)
+    {
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) WHERE District = '" + cityName +
+                    "' ORDER BY city.Population DESC";
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            ArrayList<City> cities = new ArrayList<>();
+            while (rset.next())
+            {
+                City city = new City();
+                city.ID = rset.getInt("ID");
+                city.Name = rset.getString("city.name");
+                city.Country = rset.getString("country.name");
+                city.District = rset.getString("District");
+                city.Population = rset.getInt("city.Population");
+
+                cities.add(city);
+            }
+            return cities;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get details");
+        }
+        return null;
     }
 }
 
