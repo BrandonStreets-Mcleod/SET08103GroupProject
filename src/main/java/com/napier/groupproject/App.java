@@ -48,6 +48,7 @@ public class App
         printCapitalCities(capitalCitiesInContinent, "allCapitalCitiesInContinent.md");
         ArrayList<City> capitalCitiesInRegion = a.allCapitalCitiesInRegion("North America");
         printCapitalCities(capitalCitiesInRegion, "allCapitalCitiesInRegion.md");
+        a.populationOfContinent("Asia");
         a.populationPeopleInContinents();
         a.populationPeopleInRegion();
         a.populationPeopleInCountry();
@@ -770,6 +771,38 @@ public class App
                 Long totalPopulation = rset.getLong("MIN(T1.Population)");
                 Double percentage = Double.valueOf(round(pop * 100 / totalPopulation));
                 System.out.println(String.format("%-28s %-28s %-28s", name, pop, percentage+"%"));
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get details");
+        }
+    }
+
+    public void populationOfContinent(String contientName)
+    {
+        try
+        {
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT country.Continent, SUM(country.Population), SUM(city.Population) " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) " +
+                    "WHERE country.Continent = '" + contientName + "'";
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", "Continent Name", "Total Population", "City Population", "City Population Percentage","Non-city Population", "Non-city Population Percentage"));
+            while (rset.next())
+            {
+                String name = rset.getString("country.Continent");
+                Long totalPopulation = rset.getLong("SUM(country.Population)");
+                Long cityPopulation = rset.getLong("SUM(city.Population)");
+                double cityPopPercentage = round(cityPopulation * 100 / totalPopulation);
+                Long nonCityPopulation = totalPopulation-cityPopulation;
+                double nonCityPopPercentage = 100-cityPopPercentage;
+                System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", name, totalPopulation, cityPopulation, cityPopPercentage+"%", nonCityPopulation, nonCityPopPercentage+"%"));
             }
         }
         catch (Exception e)
