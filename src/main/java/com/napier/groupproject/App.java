@@ -58,6 +58,12 @@ public class App
         a.populationPeopleInRegion();
         a.populationPeopleInCountry();
         a.numPeopleWhoSpeak();
+        ArrayList<Country> topNcountries = a.populationOfNCountries(5);
+        printCountries(topNcountries, "topNCountries.md");
+        ArrayList<Country> topNCountriesInContinent = a.populationOfNCountriesInContinent("Asia", 5);
+        printCountries(topNCountriesInContinent, "topNCountiresInContinent.md");
+        ArrayList<Country> topNCountriesInregion = a.populationOfNCountriesInRegion("North America", 5);
+        printCountries(topNCountriesInregion, "topNCountriesInRegion.md");
         // Disconnect from database
         a.disconnect();
     }
@@ -946,6 +952,114 @@ public class App
         {
             System.out.println(e.getMessage());
             System.out.println("Failed to get details");
+        }
+        return null;
+    }
+
+    public ArrayList<Country> populationOfNCountries(int N)
+    {
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect =
+                    "SELECT Code, Name, Continent, Region, Population, Capital " +
+                            "FROM country ORDER BY Population DESC LIMIT " + N;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            ArrayList<Country> countries = new ArrayList<>();
+            while (rset.next())
+            {
+                Country country = new Country();
+                country.code = rset.getString("Code");
+                country.name = rset.getString("Name");
+                country.continent = rset.getString("Continent");
+                country.region = rset.getString("Region");
+                country.population = rset.getInt("Population");
+                country.capital = rset.getInt("Capital");
+                countries.add(country);
+            }
+            return countries;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get country details");
+        }
+        return null;
+    }
+
+    public ArrayList<Country> populationOfNCountriesInContinent(String continentName, int N)
+    {
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect =
+                    "SELECT Code, Name, Continent, Region, Population, Capital " +
+                            "FROM country WHERE Continent = '" + continentName + "' ORDER BY Population DESC LIMIT " + N;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            ArrayList<Country> countries = new ArrayList<>();
+            while (rset.next())
+            {
+                Country country = new Country();
+                country.code = rset.getString("Code");
+                country.name = rset.getString("Name");
+                country.continent = rset.getString("Continent");
+                country.region = rset.getString("Region");
+                country.population = rset.getInt("Population");
+                country.capital = rset.getInt("Capital");
+                countries.add(country);
+            }
+            return countries;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get country details");
+        }
+        return null;
+    }
+
+    public ArrayList<Country> populationOfNCountriesInRegion(String regionName, int N)
+    {
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect =
+                    "SELECT Code, Name, Continent, Region, Population, Capital " +
+                            "FROM country WHERE Region = '" + regionName + "' ORDER BY Population DESC LIMIT " + N;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            ArrayList<Country> countries = new ArrayList<>();
+            while (rset.next())
+            {
+                Country country = new Country();
+                country.code = rset.getString("Code");
+                country.name = rset.getString("Name");
+                country.continent = rset.getString("Continent");
+                country.region = rset.getString("Region");
+                country.population = rset.getInt("Population");
+                country.capital = rset.getInt("Capital");
+                countries.add(country);
+            }
+            return countries;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get country details");
         }
         return null;
     }
