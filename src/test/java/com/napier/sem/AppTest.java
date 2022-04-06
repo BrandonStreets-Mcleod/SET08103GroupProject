@@ -5,12 +5,12 @@ import com.napier.groupproject.City;
 import com.napier.groupproject.Country;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Class to perfrom tests on functions
+ */
 public class AppTest
 {
     static App app;

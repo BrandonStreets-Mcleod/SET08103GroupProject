@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Created bugReportTemplate.yaml for issue tracking">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backlog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backlog.md" afterDir="false" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added Javadoc comments to all methods and classes found by PMD">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +75,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -204,41 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643986020361</updated>
-    </task>
-    <task id="LOCAL-00001" summary="First commit, adding inital files">
-      <created>1643986591235</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1643986591235</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added App.java file">
-      <created>1643986964630</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1643986964630</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Created Dockerfile">
-      <created>1643988931107</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1643988931107</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updated README.md">
-      <created>1643989347657</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1643989347657</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added badges to README.md">
-      <created>1643989610683</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1643989610683</updated>
     </task>
     <task id="LOCAL-00006" summary="Added MongoDB integration to Maven file">
       <created>1643990226212</created>
@@ -548,7 +511,42 @@
       <option name="project" value="LOCAL" />
       <updated>1648549275238</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Created functions to get top N countries in world, continent and region">
+      <created>1648822693808</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1648822693809</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Removed unused imports found by PMD">
+      <created>1649235097831</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1649235097832</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Added error message to assertEquals found by PMD">
+      <created>1649235757078</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1649235757078</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Moved variable definition for connection to start of method found by PMD">
+      <created>1649236397672</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1649236397673</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Added Javadoc comments to all methods and classes found by PMD">
+      <created>1649237272976</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1649237272976</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -609,12 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Full use cases produced" />
-    <MESSAGE value="Use case diagram started and javadoc comments added to App.java and Country.java" />
-    <MESSAGE value="Use case diagram finished" />
-    <MESSAGE value="Backlog.md updated" />
-    <MESSAGE value="function to get all cities in the world devleoped" />
-    <MESSAGE value="functions to get all capital cities and cities in areas added" />
     <MESSAGE value="function to get total population, city population and non-city population (need to sort out % as it doesnt generate properly)" />
     <MESSAGE value="New release jar files created" />
     <MESSAGE value="Backlog updated with completion date" />
@@ -634,7 +626,24 @@
     <MESSAGE value="Added function to get population of a user defined region" />
     <MESSAGE value="Added function to get population of a user defined district" />
     <MESSAGE value="Updated backlog.md with completion dates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated backlog.md with completion dates" />
+    <MESSAGE value="Created functions to get top N countries in world, continent and region" />
+    <MESSAGE value="added bugReportTemplate.yaml" />
+    <MESSAGE value="Removed unused imports found by PMD" />
+    <MESSAGE value="Added error message to assertEquals found by PMD" />
+    <MESSAGE value="Moved variable definition for connection to start of method found by PMD" />
+    <MESSAGE value="Added Javadoc comments to all methods and classes found by PMD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Javadoc comments to all methods and classes found by PMD" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java</url>
+          <line>397</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

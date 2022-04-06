@@ -9,8 +9,15 @@ import java.util.ArrayList;
 
 import static java.lang.Math.round;
 
+/**
+ * definiton for main App class
+ */
 public class App
 {
+    /**
+     * Connection to MySQL database.
+     */
+    private Connection con = null;
     /**
      * @param args - the argument that is passed to the main function
      */
@@ -67,11 +74,6 @@ public class App
         // Disconnect from database
         a.disconnect();
     }
-    /**
-     * Connection to MySQL database.
-     */
-    private Connection con = null;
-
     /**
      * Connect to the MySQL database.
      */
@@ -130,6 +132,7 @@ public class App
      */
     public ArrayList<Country> populationOfCountries()
     {
+        ArrayList<Country> countries = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -142,7 +145,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<Country> countries = new ArrayList<>();
             while (rset.next())
             {
                 Country country = new Country();
@@ -161,7 +163,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get country details");
         }
-        return null;
+        return countries;
     }
 
     /**
@@ -171,6 +173,7 @@ public class App
      */
     public ArrayList<Country> populationOfCountriesInContinent(String continentName)
     {
+        ArrayList<Country> countries = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -183,7 +186,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<Country> countries = new ArrayList<>();
             while (rset.next())
             {
                 Country country = new Country();
@@ -202,7 +204,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get country details");
         }
-        return null;
+        return countries;
     }
 
     /**
@@ -212,6 +214,7 @@ public class App
      */
     public ArrayList<Country> populationOfCountriesInRegion(String regionName)
     {
+        ArrayList<Country> countries = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -224,7 +227,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<Country> countries = new ArrayList<>();
             while (rset.next())
             {
                 Country country = new Country();
@@ -243,7 +245,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get country details");
         }
-        return null;
+        return countries;
     }
 
     /**
@@ -280,8 +282,12 @@ public class App
         }
     }
 
+    /**
+     * @return ArrayList<City>
+     */
     public ArrayList<City> allCities()
     {
+        ArrayList<City> cities = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -294,7 +300,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<City> cities = new ArrayList<>();
             while (rset.next())
             {
                 City city = new City();
@@ -313,7 +318,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get city details");
         }
-        return null;
+        return cities;
     }
 
     /**
@@ -321,6 +326,7 @@ public class App
      */
     public ArrayList<City> allCitiesInAContinent(String continentName)
     {
+        ArrayList<City> cities = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -333,7 +339,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<City> cities = new ArrayList<>();
             while (rset.next())
             {
                 City city = new City();
@@ -352,7 +357,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get city details");
         }
-        return null;
+        return cities;
     }
 
     /**
@@ -360,6 +365,7 @@ public class App
      */
     public ArrayList<City> allCitiesInARegion(String regionName)
     {
+        ArrayList<City> cities = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -372,7 +378,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<City> cities = new ArrayList<>();
             while (rset.next())
             {
                 City city = new City();
@@ -391,7 +396,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get city details");
         }
-        return null;
+        return cities;
     }
 
     /**
@@ -399,6 +404,7 @@ public class App
      */
     public ArrayList<City> allCitiesInACountry(String countryName)
     {
+        ArrayList<City> cities = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -411,7 +417,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<City> cities = new ArrayList<>();
             while (rset.next())
             {
                 City city = new City();
@@ -430,7 +435,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get city details");
         }
-        return null;
+        return cities;
     }
 
     /**
@@ -438,6 +443,7 @@ public class App
      */
     public ArrayList<City> allCitiesInADistrict(String districtName)
     {
+        ArrayList<City> cities = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -450,7 +456,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<City> cities = new ArrayList<>();
             while (rset.next())
             {
                 City city = new City();
@@ -469,7 +474,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get city details");
         }
-        return null;
+        return cities;
     }
 
     /**
@@ -511,6 +516,7 @@ public class App
      */
     public ArrayList<City> allCapitalCities()
     {
+        ArrayList<City> cities = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -523,7 +529,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<City> cities = new ArrayList<>();
             while (rset.next())
             {
                 City city = new City();
@@ -542,7 +547,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get city details");
         }
-        return null;
+        return cities;
     }
 
     /**
@@ -551,6 +556,7 @@ public class App
      */
     public ArrayList<City> allCapitalCitiesInContinent(String continent)
     {
+        ArrayList<City> cities = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -563,7 +569,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<City> cities = new ArrayList<>();
             while (rset.next())
             {
                 City city = new City();
@@ -582,7 +587,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get city details");
         }
-        return null;
+        return cities;
     }
 
     /**
@@ -591,6 +596,7 @@ public class App
      */
     public ArrayList<City> allCapitalCitiesInRegion(String regionName)
     {
+        ArrayList<City> cities = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -603,7 +609,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<City> cities = new ArrayList<>();
             while (rset.next())
             {
                 City city = new City();
@@ -622,7 +627,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get city details");
         }
-        return null;
+        return cities;
     }
 
     /**
@@ -659,6 +664,9 @@ public class App
         }
     }
 
+    /**
+     * function to get population of people on continents
+     */
     public void populationPeopleInContinents()
     {
         try
@@ -692,6 +700,9 @@ public class App
         }
     }
 
+    /**
+     * function to get population of people in region
+     */
     public void populationPeopleInRegion()
     {
         try
@@ -725,6 +736,9 @@ public class App
         }
     }
 
+    /**
+     * function to get population of people in country
+     */
     public void populationPeopleInCountry()
     {
         try
@@ -758,6 +772,9 @@ public class App
         }
     }
 
+    /**
+     * gets the number of people who speak specific languages
+     */
     public void numPeopleWhoSpeak()
     {
         try
@@ -791,6 +808,9 @@ public class App
         }
     }
 
+    /**
+     * @param contientName
+     */
     public void populationOfContinent(String contientName)
     {
         try
@@ -823,6 +843,9 @@ public class App
         }
     }
 
+    /**
+     * @param countryName
+     */
     public void populationOfCountry(String countryName)
     {
         try
@@ -855,6 +878,9 @@ public class App
         }
     }
 
+    /**
+     * @param regionName
+     */
     public void populationOfRegion(String regionName)
     {
         try
@@ -888,6 +914,9 @@ public class App
         }
     }
 
+    /**
+     * @param districtName
+     */
     public void populationOfDistrict(String districtName)
     {
         try
@@ -920,8 +949,13 @@ public class App
         }
     }
 
+    /**
+     * @param cityName
+     * @return ArrayList<City>
+     */
     public ArrayList<City> populationOfCity(String cityName)
     {
+        ArrayList<City> cities = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -934,7 +968,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<City> cities = new ArrayList<>();
             while (rset.next())
             {
                 City city = new City();
@@ -953,11 +986,16 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get details");
         }
-        return null;
+        return cities;
     }
 
+    /**
+     * @param N
+     * @return ArrayList<Country>
+     */
     public ArrayList<Country> populationOfNCountries(int N)
     {
+        ArrayList<Country> countries = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -970,7 +1008,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<Country> countries = new ArrayList<>();
             while (rset.next())
             {
                 Country country = new Country();
@@ -989,11 +1026,17 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get country details");
         }
-        return null;
+        return countries;
     }
 
+    /**
+     * @param continentName
+     * @param N
+     * @return ArrayList<Country>
+     */
     public ArrayList<Country> populationOfNCountriesInContinent(String continentName, int N)
     {
+        ArrayList<Country> countries = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -1006,7 +1049,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<Country> countries = new ArrayList<>();
             while (rset.next())
             {
                 Country country = new Country();
@@ -1025,11 +1067,17 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get country details");
         }
-        return null;
+        return countries;
     }
 
+    /**
+     * @param regionName
+     * @param N
+     * @return ArrayList<Country>
+     */
     public ArrayList<Country> populationOfNCountriesInRegion(String regionName, int N)
     {
+        ArrayList<Country> countries = new ArrayList<>();
         try
         {
             // Create an SQL statement
@@ -1042,7 +1090,6 @@ public class App
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            ArrayList<Country> countries = new ArrayList<>();
             while (rset.next())
             {
                 Country country = new Country();
@@ -1061,7 +1108,7 @@ public class App
             System.out.println(e.getMessage());
             System.out.println("Failed to get country details");
         }
-        return null;
+        return countries;
     }
 }
 
