@@ -71,6 +71,22 @@ public class App
         printCountries(topNCountriesInContinent, "topNCountiresInContinent.md");
         ArrayList<Country> topNCountriesInregion = a.populationOfNCountriesInRegion("North America", 5);
         printCountries(topNCountriesInregion, "topNCountriesInRegion.md");
+        ArrayList<City> topNCities = a.topNCities(5);
+        printCities(cities, "topNCities.md");
+        ArrayList<City> topNCitiesInContinent = a.topNCitiesInContinent("Asia", 5);
+        printCities(citiesInContinent, "topNCitiesInContinent.md");
+        ArrayList<City> topNCitiesInRegion = a.topNCitiesInRegion("North America", 5);
+        printCities(citiesInRegion, "topNCitiesInRegion.md");
+        ArrayList<City> topNCitiesInCountry = a.topNCitiesInCountry("United States", 5);
+        printCities(citiesInCountry, "topNCitiesInCountry.md");
+        ArrayList<City> topNCitiesInDistrict = a.topNCitiesInDistrict("California", 5);
+        printCities(citiesInDistrict, "topNCitiesInDistrict.md");
+        ArrayList<City> topNcapitalCities = a.topNCapitalCities(5);
+        printCapitalCities(capitalCities, "topNCapitalCities.md");
+        ArrayList<City> topNcapitalCitiesInContinent = a.topNCapitalCitiesInContinent("Asia", 5);
+        printCapitalCities(capitalCitiesInContinent, "topNCapitalCitiesInContinent.md");
+        ArrayList<City> topNcapitalCitiesInRegion = a.topNCapitalCitiesInRegion("North America", 5);
+        printCapitalCities(capitalCitiesInRegion, "topNCapitalCitiesInRegion.md");
         // Disconnect from database
         a.disconnect();
     }
@@ -512,7 +528,7 @@ public class App
     }
 
     /**
-     * @return null
+     * @return ArrayList<City>
      */
     public ArrayList<City> allCapitalCities()
     {
@@ -1109,6 +1125,332 @@ public class App
             System.out.println("Failed to get country details");
         }
         return countries;
+    }
+
+    /**
+     * @param N
+     * @return ArrayList<City>
+     */
+    public ArrayList<City> topNCities(int N)
+    {
+        ArrayList<City> cities = new ArrayList<>();
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) " +
+                    "ORDER BY city.Population DESC LIMIT " + N;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            while (rset.next())
+            {
+                City city = new City();
+                city.ID = rset.getInt("ID");
+                city.Name = rset.getString("city.name");
+                city.Country = rset.getString("country.name");
+                city.District = rset.getString("District");
+                city.Population = rset.getInt("city.Population");
+
+                cities.add(city);
+            }
+            return cities;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get city details");
+        }
+        return cities;
+    }
+
+    /**
+     * @param continentName
+     * @param N
+     * @return arrayList<City>
+     */
+    public ArrayList<City> topNCitiesInContinent(String continentName, int N)
+    {
+        ArrayList<City> cities = new ArrayList<>();
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) WHERE Continent = '" + continentName +
+                    "' ORDER BY city.Population DESC LIMIT " + N;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            while (rset.next())
+            {
+                City city = new City();
+                city.ID = rset.getInt("ID");
+                city.Name = rset.getString("city.name");
+                city.Country = rset.getString("country.name");
+                city.District = rset.getString("District");
+                city.Population = rset.getInt("city.Population");
+
+                cities.add(city);
+            }
+            return cities;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get city details");
+        }
+        return cities;
+    }
+
+    /**
+     * @param regionName - name of region to be used in query
+     * @param N - number of records to show
+     * @return ArrayList<City>
+     */
+    public ArrayList<City> topNCitiesInRegion(String regionName, int N)
+    {
+        ArrayList<City> cities = new ArrayList<>();
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) WHERE Region = '" + regionName +
+                    "' ORDER BY city.Population DESC LIMIT " + N;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            while (rset.next())
+            {
+                City city = new City();
+                city.ID = rset.getInt("ID");
+                city.Name = rset.getString("city.name");
+                city.Country = rset.getString("country.name");
+                city.District = rset.getString("District");
+                city.Population = rset.getInt("city.Population");
+
+                cities.add(city);
+            }
+            return cities;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get city details");
+        }
+        return cities;
+    }
+
+    /**
+     * @param countryName - name of country used in query
+     * @param N - number of records to show
+     * @return ArrayList<City>
+     */
+    public ArrayList<City> topNCitiesInCountry(String countryName, int N)
+    {
+        ArrayList<City> cities = new ArrayList<>();
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) WHERE country.Name = '" + countryName +
+                    "' ORDER BY city.Population DESC LIMIT " + N;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            while (rset.next())
+            {
+                City city = new City();
+                city.ID = rset.getInt("ID");
+                city.Name = rset.getString("city.name");
+                city.Country = rset.getString("country.name");
+                city.District = rset.getString("District");
+                city.Population = rset.getInt("city.Population");
+
+                cities.add(city);
+            }
+            return cities;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get city details");
+        }
+        return cities;
+    }
+
+    /**
+     * @param districtName - name of district to be used in query
+     * @param N - number of records to show
+     * @return ArrayList<City>
+     */
+    public ArrayList<City> topNCitiesInDistrict(String districtName, int N)
+    {
+        ArrayList<City> cities = new ArrayList<>();
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) WHERE District = '" + districtName +
+                    "' ORDER BY city.Population DESC LIMIT " + N;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            while (rset.next())
+            {
+                City city = new City();
+                city.ID = rset.getInt("ID");
+                city.Name = rset.getString("city.name");
+                city.Country = rset.getString("country.name");
+                city.District = rset.getString("District");
+                city.Population = rset.getInt("city.Population");
+
+                cities.add(city);
+            }
+            return cities;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get city details");
+        }
+        return cities;
+    }
+
+
+    /**
+     * @param N
+     * @return ArrayList<City>
+     */
+    public ArrayList<City> topNCapitalCities(int N)
+    {
+        ArrayList<City> cities = new ArrayList<>();
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) WHERE (Capital = ID)" +
+                    " ORDER BY city.Population DESC LIMIT " + N;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            while (rset.next())
+            {
+                City city = new City();
+                city.ID = rset.getInt("ID");
+                city.Name = rset.getString("city.name");
+                city.Country = rset.getString("country.name");
+                city.District = rset.getString("District");
+                city.Population = rset.getInt("city.Population");
+
+                cities.add(city);
+            }
+            return cities;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get city details");
+        }
+        return cities;
+    }
+
+    /**
+     * @param continent - name of contient to be used in query
+     * @return ArrayList<City>
+     */
+    public ArrayList<City> topNCapitalCitiesInContinent(String continent, int N)
+    {
+        ArrayList<City> cities = new ArrayList<>();
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) WHERE (Capital = ID) && continent = '" + continent +
+                    "' ORDER BY city.Population DESC LIMIT " + N;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            while (rset.next())
+            {
+                City city = new City();
+                city.ID = rset.getInt("ID");
+                city.Name = rset.getString("city.name");
+                city.Country = rset.getString("country.name");
+                city.District = rset.getString("District");
+                city.Population = rset.getInt("city.Population");
+
+                cities.add(city);
+            }
+            return cities;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get city details");
+        }
+        return cities;
+    }
+
+    /**
+     * @param regionName - name of region to be used in query
+     * @param N - number of records to show
+     * @return ArrayList<City>
+     */
+    public ArrayList<City> topNCapitalCitiesInRegion(String regionName, int N)
+    {
+        ArrayList<City> cities = new ArrayList<>();
+        try
+        {
+            // Create an SQL statement
+            Statement stmt = con.createStatement();
+            // Create string for SQL statement
+            String strSelect = "SELECT ID, city.Name, country.name, District, city.Population " +
+                    "FROM city JOIN country ON (country.code = city.CountryCode) WHERE (Capital = ID) && Region = '" + regionName +
+                    "' ORDER BY city.Population DESC LIMIT " + N;
+            // Execute SQL statement
+            ResultSet rset = stmt.executeQuery(strSelect);
+            // Return new employee if valid.
+            // Check one is returned
+            while (rset.next())
+            {
+                City city = new City();
+                city.ID = rset.getInt("ID");
+                city.Name = rset.getString("city.name");
+                city.Country = rset.getString("country.name");
+                city.District = rset.getString("District");
+                city.Population = rset.getInt("city.Population");
+
+                cities.add(city);
+            }
+            return cities;
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to get city details");
+        }
+        return cities;
     }
 }
 

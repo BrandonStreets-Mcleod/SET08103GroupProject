@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added Javadoc comments to all methods and classes found by PMD">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" afterDir="false" />
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Added functions to get top N cities in world, continent, region, country and district">
+      <change beforePath="$PROJECT_DIR$/Backlog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backlog.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,13 +202,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643986020361</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added MongoDB integration to Maven file">
-      <created>1643990226212</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1643990226212</updated>
     </task>
     <task id="LOCAL-00007" summary="Packaged in Maven to make JAR file">
       <created>1643990864528</created>
@@ -546,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649237272976</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Added functions to get top N cities in world, continent, region, country and district">
+      <created>1649239060528</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1649239060529</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -607,7 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="function to get total population, city population and non-city population (need to sort out % as it doesnt generate properly)" />
     <MESSAGE value="New release jar files created" />
     <MESSAGE value="Backlog updated with completion date" />
     <MESSAGE value="Created function to get languages spoken" />
@@ -632,18 +631,8 @@
     <MESSAGE value="Added error message to assertEquals found by PMD" />
     <MESSAGE value="Moved variable definition for connection to start of method found by PMD" />
     <MESSAGE value="Added Javadoc comments to all methods and classes found by PMD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Javadoc comments to all methods and classes found by PMD" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java</url>
-          <line>397</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added functions to get top N cities in world, continent, region, country and district" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functions to get top N cities in world, continent, region, country and district" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
