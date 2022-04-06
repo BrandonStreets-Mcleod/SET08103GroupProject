@@ -12,6 +12,10 @@ import static java.lang.Math.round;
 public class App
 {
     /**
+     * Connection to MySQL database.
+     */
+    private Connection con = null;
+    /**
      * @param args - the argument that is passed to the main function
      */
     public static void main(String[] args)
@@ -67,11 +71,6 @@ public class App
         // Disconnect from database
         a.disconnect();
     }
-    /**
-     * Connection to MySQL database.
-     */
-    private Connection con = null;
-
     /**
      * Connect to the MySQL database.
      */
