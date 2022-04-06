@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="added bugReportTemplate.yaml">
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Removed unused imports found by PMD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/napier/sem/AppIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/napier/sem/AppIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -202,13 +203,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643986020361</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added App.java file">
-      <created>1643986964630</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1643986964630</updated>
     </task>
     <task id="LOCAL-00003" summary="Created Dockerfile">
       <created>1643988931107</created>
@@ -546,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648822693809</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Removed unused imports found by PMD">
+      <created>1649235097831</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1649235097832</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -607,7 +608,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Use case diagram finished" />
     <MESSAGE value="Backlog.md updated" />
     <MESSAGE value="function to get all cities in the world devleoped" />
     <MESSAGE value="functions to get all capital cities and cities in areas added" />
@@ -632,7 +632,8 @@
     <MESSAGE value="Updated backlog.md with completion dates" />
     <MESSAGE value="Created functions to get top N countries in world, continent and region" />
     <MESSAGE value="added bugReportTemplate.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bugReportTemplate.yaml" />
+    <MESSAGE value="Removed unused imports found by PMD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unused imports found by PMD" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
