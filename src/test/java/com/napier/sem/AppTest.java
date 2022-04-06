@@ -8,6 +8,9 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
+/**
+ * Class to perfrom tests on functions
+ */
 public class AppTest
 {
     static App app;

@@ -9,6 +9,9 @@ import java.util.ArrayList;
 
 import static java.lang.Math.round;
 
+/**
+ * definiton for main App class
+ */
 public class App
 {
     /**
@@ -279,6 +282,9 @@ public class App
         }
     }
 
+    /**
+     * @return ArrayList<City>
+     */
     public ArrayList<City> allCities()
     {
         try
@@ -658,6 +664,9 @@ public class App
         }
     }
 
+    /**
+     * function to get population of people on continents
+     */
     public void populationPeopleInContinents()
     {
         try
@@ -691,6 +700,9 @@ public class App
         }
     }
 
+    /**
+     * function to get population of people in region
+     */
     public void populationPeopleInRegion()
     {
         try
@@ -724,6 +736,9 @@ public class App
         }
     }
 
+    /**
+     * function to get population of people in country
+     */
     public void populationPeopleInCountry()
     {
         try
@@ -757,6 +772,9 @@ public class App
         }
     }
 
+    /**
+     * gets the number of people who speak specific languages
+     */
     public void numPeopleWhoSpeak()
     {
         try
@@ -790,6 +808,9 @@ public class App
         }
     }
 
+    /**
+     * @param contientName
+     */
     public void populationOfContinent(String contientName)
     {
         try
@@ -822,6 +843,9 @@ public class App
         }
     }
 
+    /**
+     * @param countryName
+     */
     public void populationOfCountry(String countryName)
     {
         try
@@ -854,6 +878,9 @@ public class App
         }
     }
 
+    /**
+     * @param regionName
+     */
     public void populationOfRegion(String regionName)
     {
         try
@@ -887,6 +914,9 @@ public class App
         }
     }
 
+    /**
+     * @param districtName
+     */
     public void populationOfDistrict(String districtName)
     {
         try
@@ -919,6 +949,10 @@ public class App
         }
     }
 
+    /**
+     * @param cityName
+     * @return ArrayList<City>
+     */
     public ArrayList<City> populationOfCity(String cityName)
     {
         try
@@ -955,6 +989,10 @@ public class App
         return null;
     }
 
+    /**
+     * @param N
+     * @return ArrayList<Country>
+     */
     public ArrayList<Country> populationOfNCountries(int N)
     {
         try
@@ -991,6 +1029,11 @@ public class App
         return null;
     }
 
+    /**
+     * @param continentName
+     * @param N
+     * @return ArrayList<Country>
+     */
     public ArrayList<Country> populationOfNCountriesInContinent(String continentName, int N)
     {
         try
@@ -1027,6 +1070,11 @@ public class App
         return null;
     }
 
+    /**
+     * @param regionName
+     * @param N
+     * @return ArrayList<Country>
+     */
     public ArrayList<Country> populationOfNCountriesInRegion(String regionName, int N)
     {
         try
