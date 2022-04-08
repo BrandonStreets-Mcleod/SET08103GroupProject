@@ -72,21 +72,21 @@ public class App
         ArrayList<Country> topNCountriesInregion = a.populationOfNCountriesInRegion("North America", 5);
         printCountries(topNCountriesInregion, "topNCountriesInRegion.md");
         ArrayList<City> topNCities = a.topNCities(5);
-        printCities(cities, "topNCities.md");
+        printCities(topNCities, "topNCities.md");
         ArrayList<City> topNCitiesInContinent = a.topNCitiesInContinent("Asia", 5);
-        printCities(citiesInContinent, "topNCitiesInContinent.md");
+        printCities(topNCitiesInContinent, "topNCitiesInContinent.md");
         ArrayList<City> topNCitiesInRegion = a.topNCitiesInRegion("North America", 5);
-        printCities(citiesInRegion, "topNCitiesInRegion.md");
+        printCities(topNCitiesInRegion, "topNCitiesInRegion.md");
         ArrayList<City> topNCitiesInCountry = a.topNCitiesInCountry("United States", 5);
-        printCities(citiesInCountry, "topNCitiesInCountry.md");
+        printCities(topNCitiesInCountry, "topNCitiesInCountry.md");
         ArrayList<City> topNCitiesInDistrict = a.topNCitiesInDistrict("California", 5);
-        printCities(citiesInDistrict, "topNCitiesInDistrict.md");
+        printCities(topNCitiesInDistrict, "topNCitiesInDistrict.md");
         ArrayList<City> topNcapitalCities = a.topNCapitalCities(5);
-        printCapitalCities(capitalCities, "topNCapitalCities.md");
+        printCapitalCities(topNcapitalCities, "topNCapitalCities.md");
         ArrayList<City> topNcapitalCitiesInContinent = a.topNCapitalCitiesInContinent("Asia", 5);
-        printCapitalCities(capitalCitiesInContinent, "topNCapitalCitiesInContinent.md");
+        printCapitalCities(topNcapitalCitiesInContinent, "topNCapitalCitiesInContinent.md");
         ArrayList<City> topNcapitalCitiesInRegion = a.topNCapitalCitiesInRegion("North America", 5);
-        printCapitalCities(capitalCitiesInRegion, "topNCapitalCitiesInRegion.md");
+        printCapitalCities(topNcapitalCitiesInRegion, "topNCapitalCitiesInRegion.md");
         // Disconnect from database
         a.disconnect();
     }
