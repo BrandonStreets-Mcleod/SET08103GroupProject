@@ -873,7 +873,7 @@ public class App
             // Create an SQL statement
             Statement stmt = con.createStatement();
             // Create string for SQL statement
-            String strSelect = "SELECT (country.Population), SUM(city.Population)" +
+            String strSelect = "SELECT SUM(country.Population), SUM(city.Population)" +
                     "FROM city JOIN country ON (country.code = city.CountryCode)";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
