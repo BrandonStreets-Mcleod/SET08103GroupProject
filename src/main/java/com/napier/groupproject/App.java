@@ -59,7 +59,7 @@ public class App
         a.populationOfCountry("United States");
         a.populationOfRegion("North America");
         a.populationOfDistrict("California");
-        ArrayList<City> city = a.populationOfCity("London");
+        ArrayList<City> city = a.populationOfCity("California");
         printCities(city, "populationOfCity.md");
         a.populationPeopleInContinents();
         a.populationPeopleInRegion();
@@ -1050,7 +1050,7 @@ public class App
             // Create an SQL statement
             Statement stmt = con.createStatement();
             // Create string for SQL statement
-            String strSelect = "SELECT District, country.Population, SUM(city.Population)" +
+            String strSelect = "SELECT District, SUM(country.Population), SUM(city.Population)" +
                     "FROM city JOIN country ON (country.code = city.CountryCode) WHERE District = '" + districtName + "'";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
