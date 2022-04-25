@@ -874,7 +874,7 @@ public class App
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect = "SELECT country.Name, SUM(country.Population), SUM(city.Population)" +
-                    "FROM city JOIN country ON (country.code = city.CountryCode)";
+                    "FROM city JOIN country ON (country.code = city.CountryCode) GROUP BY country.Name";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
