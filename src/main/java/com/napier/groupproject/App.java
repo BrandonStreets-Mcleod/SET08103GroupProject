@@ -59,7 +59,7 @@ public class App
         a.populationOfCountry("United States");
         a.populationOfRegion("North America");
         a.populationOfDistrict("California");
-        ArrayList<City> city = a.populationOfCity("Edinburgh");
+        ArrayList<City> city = a.populationOfCity("London");
         printCities(city, "populationOfCity.md");
         a.populationPeopleInContinents();
         a.populationPeopleInRegion();
