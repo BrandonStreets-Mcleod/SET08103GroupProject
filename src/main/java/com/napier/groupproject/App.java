@@ -873,22 +873,18 @@ public class App
             // Create an SQL statement
             Statement stmt = con.createStatement();
             // Create string for SQL statement
-            String strSelect = "SELECT country.Name, SUM(country.Population), SUM(city.Population)" +
-                    "FROM city JOIN country ON (country.code = city.CountryCode) GROUP BY country.Name";
+            String strSelect = "SELECT SUM(Population) AS World Population" +
+                    "FROM country" +
+                    "GROUP BY World Population";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Return new employee if valid.
             // Check one is returned
-            System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", "Country Name", "Total Population", "City Population", "City Population Percentage","Non-city Population", "Non-city Population Percentage"));
+            System.out.println(String.format("%-28s", "Total Population"));
             while (rset.next())
             {
-                String name = rset.getString("country.Name");
-                Long totalPopulation = rset.getLong("SUM(country.Population)");
-                Long cityPopulation = rset.getLong("SUM(city.Population)");
-                double cityPopPercentage = round(cityPopulation * 100 / totalPopulation);
-                Long nonCityPopulation = totalPopulation-cityPopulation;
-                double nonCityPopPercentage = 100-cityPopPercentage;
-                System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", name, totalPopulation, cityPopulation, cityPopPercentage+"%", nonCityPopulation, nonCityPopPercentage+"%"));
+                Long totalPopulation = rset.getLong("SUM(Population)");
+                System.out.println(String.format("%-28s", totalPopulation));
             }
         }
         catch (Exception e)

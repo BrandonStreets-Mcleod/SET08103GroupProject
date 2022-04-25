@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Updated SQL queries to get correct outputs for population of district and city">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/napier/groupproject/App.java" afterDir="false" />
-    </list>
+    <list default="true" id="e43b8be0-eec8-4958-bc61-c313e64dd238" name="Changes" comment="Updated populationOfWorld" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,13 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643986020361</updated>
-    </task>
-    <task id="LOCAL-00013" summary="sql database dockerfile added">
-      <created>1644767157165</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1644767157165</updated>
     </task>
     <task id="LOCAL-00014" summary="docker-compose file added to allow for sql and app to communicate as services">
       <created>1644767628837</created>
@@ -548,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650880801703</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Updated populationOfWorld">
+      <created>1650880999801</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1650880999801</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -609,7 +606,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Allowed for local DB running" />
     <MESSAGE value="Reverting changes that broke application" />
     <MESSAGE value="Added integration tests" />
     <MESSAGE value="Added integration testing" />
@@ -634,7 +630,8 @@
     <MESSAGE value="Added correct arraylists to print cities and print capital cities" />
     <MESSAGE value="Added images to README.md" />
     <MESSAGE value="Updated SQL queries to get correct outputs for population of district and city" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated SQL queries to get correct outputs for population of district and city" />
+    <MESSAGE value="Updated populationOfWorld" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated populationOfWorld" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
