@@ -873,7 +873,7 @@ public class App
             // Create an SQL statement
             Statement stmt = con.createStatement();
             // Create string for SQL statement
-            String strSelect = "SELECT SUM(country.Population), SUM(city.Population)" +
+            String strSelect = "SELECT country.Name, SUM(country.Population), SUM(city.Population)" +
                     "FROM city JOIN country ON (country.code = city.CountryCode)";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
@@ -1059,7 +1059,7 @@ public class App
             System.out.println(String.format("%-28s %-28s %-28s %-28s %-28s %-28s", "District Name", "Total Population", "City Population", "City Population Percentage","Non-city Population", "Non-city Population Percentage"));
             while (rset.next())
             {
-                String name = rset.getString("country.Region");
+                String name = rset.getString("District");
                 Long totalPopulation = rset.getLong("SUM(country.Population)");
                 Long cityPopulation = rset.getLong("SUM(city.Population)");
                 double cityPopPercentage = round(cityPopulation * 100 / totalPopulation);
